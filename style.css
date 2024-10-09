@@ -1,399 +1,639 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #1b1a1a;
-  background-image: url(/img/fundoClaro.jpg);
-  background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
-  background-position: center; /* Centraliza a imagem */
-  background-repeat: no-repeat; /* Impede a repetição da imagem */
-  height: 100vh; /* Define a altura do body para 100% da altura da tela */
-  margin: 0;
-}
 
-.fundoCardapio {
-  background-image: url(./img/lancheApr.jpg);
-  background-size: cover;
-  background-position: center;
-  width: 100vw;
-  height: 100%;
-}
+/* CSS PAGINA HOME COMEÇA AQUI */
 
-.fundoBebidas {
-  background-image: url(./img/fundoBebidas.jpg.jpg);
-  background-size: cover;
-  background-position: center;
-  width: 100vw;
-  height: 100%;
-  background-color: #675f5f;
-}
-.fundoDoce {
-  background-image: url(./img/fundoDoce1.jpg);
-  background-size: cover;
-  background-position: center;
-  width: 100vw;
-  height: 100%;
-  background-color: #1b1a1a;
-}
-
-/*botoes do carousel*/
-/* Mudar a cor dos ícones de navegação (setas) */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: #675f5f; /* Cor de fundo para as setas */
-  border-radius: 50%; /* Deixa as setas arredondadas */
-  width: 50px;
-  height: 50px;
-}
-
-/* Adicionar efeito de hover para melhorar a experiência */
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover {
-  background-color: #1b1a1a; /* Mudar a cor ao passar o mouse */
-  transition: background-color 0.3s ease;
-}
-
-/* Opcional: personalizar os indicadores (bolinhas) */
-.carousel-indicators [data-bs-target] {
-  background-color: #1b1a1a; /* Cor padrão das bolinhas */
-}
-
-.carousel-indicators [data-bs-target]:hover,
-.carousel-indicators .active {
-  background-color: #1b1a1a; /* Cor das bolinhas ativas ou ao passar o mouse */
-}
-#carouselExampleIndicators {
-  float: right; /*Move o carousel para a direita*/
-}
-/*Imagens do carousel*/
-#c1 {
-  width: 500px; /* Defina a largura desejada */
-  height: 500px;
-  border-radius: 15px;
-}
-
-.container {
-  width: 55%;
-  height: 55%;
-  position: relative;
-  left: 150px;
-}
-
-/*Box de texto ao lado do carousel*/
-.text-box {
-  background-color: #f8f9fa;
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  position: relative;
-  top: -400px;
-  left: 70px;
-  width: 110%;
-  height: auto;
-}
-
-.text-box h2 {
-  position: relative;
-  left: -70px;
-  color: #d9534f;
-  font-size: 2em;
-  margin-bottom: 5px;
-}
-
-.text-box p {
-  font-size: 1.1em;
-  color: #555;
-  line-height: 1.6;
-}
-
-img {
-  width: 200px; /* Defina a largura desejada */
-  height: 200px; /* Defina a altura desejada */
-  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
-  border-radius: 10px; /* Opcional: deixa as bordas arredondadas */
-}
-h2 {
-  border-radius: 15px;
-  margin: auto;
-  width: 80%;
-  color: rgb(69, 65, 65);
-  font-size: 250%;
-}
-
-h5 {
-  font-weight: bold;
-}
-
-.titleh2 {
-  background-color: black;
-  color: aliceblue;
-  text-align: center;
-  margin: 20px auto;
-  width: 100%;
-  padding: 15px;
-  border-radius: 15px;
-  font-size: 250%;
-  opacity: 0.7;
-}
-
-.p1 {
-  color: #d9534f;
-  position: relative;
-  top: +15px;
-  text-align: center;
-  font-size: 180%;
-  font-weight: bold;
-}
-
-#demo {
-  position: relative;
-  top: -150px;
-  margin: auto;
-  width: 95%;
-  padding: auto;
-}
-
-.menuLanche {
-  text-align: center;
-}
-
-.tableLanches {
-  max-height: 80%;
-  min-height: 60vh;
-  width: 80%; /*ajusta o tamanho da tabela*/
-  margin: auto;
-  background-color: black;
-  opacity: 0.8;
-  border-radius: 25px;
-}
-
-.line {
-  border: none; /* Remove a borda padrão */
-  height: 2px; /* Define a altura da linha */
-  background-color: black; /* Define a cor da linha */
-  width: 45%; /* Define a largura da linha */
-  margin: 20px auto; /* Centraliza a linha */
-  border-radius: 15px;
-}
-
-td,
-tr {
-  color: aliceblue;
-  font-size: large;
-  padding-right: 15px;
-}
-.menuh2 {
-  color: aliceblue;
-  background-color: #1b1a1a;
-  opacity: 0.8;
-  padding: 10px;
-}
-
-.menuh2Bebidas {
-  color: aliceblue;
-  background-color: black;
-  width: 45%; /*Tamanho*/
-  font-size: 250%;
-  padding: 10px;
-  border-radius: 15px;
-  opacity: 0.8;
-}
-
-th {
-  color: aliceblue;
-  font-weight: bold;
-  text-transform: uppercase; /* Texto em maiúsculo */
-  padding-right: 15px;
-}
-
-.menuBebidas {
-  text-align: center;
-}
-
-.tableBebidas {
-  max-height: 80%;
-  min-height: 65vh;
-  width: 45%; /*ajusta o tamanho da tabela*/
-  margin: auto;
-  background-color: black;
-  opacity: 0.8;
-  border-radius: 25px;
-}
-
-.menuSobremesas {
-  text-align: center;
-}
-
-.tableSobremesas {
-  max-height: 80%;
-  min-height: 60vh;
-  width: 80%; /*ajusta o tamanho da tabela*/
-  margin: auto;
-  background-color: black;
-  opacity: 0.8;
-  border-radius: 25px;
-}
-.card-title {
-  color: black;
-}
-
-a {
-  text-decoration: none; /*remove o sublinhado*/
-}
-
-.titleBoxVideo {
-  padding: 15px;
-  text-align: center;
-  width: 700px;
-  color: #d9534f;
-}
-
-.pVideo {
-  text-align: left;
-  position: relative;
-  top: -35px;
-  color: black;
-  margin: 10px;
-  width: 700px;
-  border-radius: 15px;
-}
-
-.textoVideo {
-  background-color: black;
-}
-
-.container2 {
-  background-color: white;
-  position: relative;
-  height: 320px;
-  width: 750px;
-  top: -150px;
-  left: 45px;
-  border-radius: 15px;
-}
-.videoBurguer {
-  position: relative;
-  height: 250px;
-  width: 1250px;
-  left: 790px;
-  top: -360px;
-  border-radius: 15px;
-}
-
-/*Responsividade em diversos*/
-
-/* Estilos gerais para dispositivos menores */
-@media (max-width: 768px) {
-  .navbar {
+/* Estilos gerais para todos os dispositivos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url(/img/fundoClaro.jpg);
+  }
+  
+  .conteudo-Home .conteudo-cima {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .titulo {
+    background-color: black;
+    color: aliceblue;
     text-align: center;
-  }
-  .navbar-brand {
-    margin-left: 0;
-  }
-
-  h2.titleh2 {
-    font-size: 1.8em;
-  }
-
-  .p1 {
-    font-size: 1.4em;
-  }
-  /* Tornando o carousel mais responsivo */
-  .container {
-    width: 100%;
-    height: auto;
-    left: 0;
-    padding: 10px;
-  }
-  #c1 {
-    width: 100%;
-    height: auto;
-  }
-
-  .text-box {
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin: 20px;
-    padding: 10px;
-  }
-
-  .text-box h2 {
-    left: 0;
-    text-align: center;
-  }
-
-  /* Cards com lanches, bebidas e sobremesas */
-  #demo {
-    top: 0;
-    margin-top: 20px;
-  }
-
-  .col img {
-    width: 100%;
-    height: auto;
-  }
-
-  /*Video e informações na parte inferior*/
-  .container2 {
-    width: 90%;
-    height: auto;
-    margin: auto;
-    top: 0;
-  }
-
-  .videoBurguer {
-    width: 100%;
-    height: auto;
-    left: 0;
-    top: 0;
-  }
-
-  /*Ajuste geral de margens e espaçamentos*/
-  .pVideo,
-  .tittleBoxVideo {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-  }
-}
-
-/*Para smartphones*/
-@media (max-width: 576px) {
-  h2.titleh2 {
-    font-size: 1.5em;
-  }
-
-  .p1 {
-    font-size: 1.2em;
-  }
-
-  /* Box de texto ao lado do carousel em uma coluna */
-  .text-box {
-    width: 100%;
+    margin: 20px auto;
+    width: 75%;
     padding: 15px;
+    border-radius: 15px;
+    font-size: 2rem;
+    opacity: 0.7;
+    max-width: 70rem;
+  }
+  
+  .sub-titulo {
+    color: #d9534f;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .conteudo-carrousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100%;
+    margin-top: 50px;
+  }
+  
+  .texto-home{
+    color: #494949;
   }
 
-  .text-box h2 {
-    font-size: 1.5em;
+  .caixa-texto {
+    border-radius: 20px;
+    padding: 25px;
+    background-color: white;
+    font-size: 20px;
+    width: 50vw;
+    max-width: 700px;
   }
+  
+  .titulo-conteudo-esquerda {
+    color: red;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .carousel-inner {
+    height: 320px;
+    width: 500px;
+    border-radius: 20px;
+    object-fit: contain;
+  }
+  
+  .lanches, .bebidas, .sobremesas {
+    background-color: rgb(221, 218, 218);
+    width: 30%;
+    border-radius: 20px;
+    padding: 15px;
+    max-width: 400px;
 
-  .container2,
-  .videoBurguer {
+    h3{
+        font-size: 1.5rem;
+        margin-top: 8px;
+        font-weight: bold;
+        color: #675f5f;
+    }
+
+    p{
+        font-size: 1.2rem;
+        color: #675f5f;
+    }
+  }
+  
+  .imagem1, .imagem2, .imagem3 {
+    height: 15em;
     width: 100%;
   }
+  
+  .conteudo-imagem {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: row;
+    padding: 35px;
+    justify-content: space-around;
+    background-color: #494949;
 
-  /*Card do cardapio*/
-  .col {
-    margin-bottom: 20px;
+  }
+  
+  .rodape {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #494949;
+
+  }
+  
+  .rodape-texto {
+    background-color: rgb(221, 218, 218);
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    color: #675f5f;
+    margin-bottom: 25px;
+    max-width: 700px;
+    
+    h3{
+        color: red;
+        text-align: center;
+        font-size: 2rem;
+    }
+  }
+  
+  .col-lg-6 {
+    width: 30vw;
+    height: 22rem;
   }
 
-  /*Ajustando os botões ao tamanho do texto*/
-  button.btn {
-    width: 100%;
-    margin-top: 10px;
+  /* CSS PAGINA HOME É ATE AQUI */
+
+    /* ------------------------------------------------------------------- */
+
+  /* CSS PAGINA SOBREMESAS COMEÇA AQUI */
+
+  .fundoDoce {
+    background-image: url(./img/fundoDoce1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100%;
+    background-color: #1b1a1a;
   }
 
-  /*Rendimensionando o video*/
-  .videoBurguer iframe {
-    height: 200px;
+  .menuh2Sobremesas{
+        color: aliceblue;
+        background-color: black;
+        width: 50vw;
+        font-size: 250%;
+        padding: 10px;
+        border-radius: 15px;
+        opacity: 0.8;
+        max-width: 50rem;
   }
+
+  .tableSobremesas {
+    padding: 35px;
+    margin: auto;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 13px;
+    max-width: 70rem;
+  }
+
+.sub-titulo-sobremesas{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
 }
+
+.texto-sobremesa{
+    font-size: 15px;
+}
+
+
+
+  .menuSobremesas {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    h2{
+        color: white;
+        background-color: black;
+        width: 50vw;
+        padding: 10px;
+        border-radius: 15px;
+        opacity: 0.8;
+    }
+  }
+
+  /* CSS PAGINA SOBREMESAS TERMINA AQUI */
+
+   /* ------------------------------------------------------------------- */
+
+    /* CSS DA PAGINA DE BEBIDAS COMEÇA AQUI  */
+
+      .menuh2Bebidas {
+        color: aliceblue;
+        background-color: black;
+        width: 50vw;
+        font-size: 250%;
+        padding: 10px;
+        border-radius: 15px;
+        opacity: 0.8;
+        max-width: 60rem;
+      }
+
+    .fundoBebidas {
+        background-image: url(./img/fundoBebidas.jpg.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100%;
+        background-color: #675f5f;
+      }
+
+    .menuBebidas {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      
+
+      .sub-titulo-bebidas{
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .tableBebidas {
+        padding: 30px;
+        margin: auto;
+        background-color: black;
+        opacity: 0.8;
+        border-radius: 25px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        font-size: 20px;
+        width: 80%;
+        max-width: 70rem;
+        margin-bottom: 15px;
+      }
+
+        p{
+            color: white;
+        }
+    
+
+    /* CSS DA PAGINA DE BEBIDAS TERMINA AQUI  */
+
+   /* ------------------------------------------------------------------- */
+
+   /* CSS DA PAGINA DE HAMBURGUERES COMEÇA AQUI */
+
+   .fundoCardapio {
+    background-image: url(./img/lancheApr.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100%;
+  }
+
+  .menuLancheHamburguer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .menuh2Hamburguer{
+    text-align: center;
+    color: aliceblue;
+    background-color: black;
+    width: 60vw; /*Tamanho*/
+    font-size: 250%;
+    padding: 15px;
+    border-radius: 15px;
+    opacity: 0.8;
+    max-width: 60rem;
+  }
+
+  .tableLanches{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 80%; /*ajusta o tamanho da tabela*/
+    margin: auto;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 25px;
+    max-width: 70rem;
+    height: 75vh;
+    text-align: center;
+    color: white;
+    padding: 10px;
+  }
+
+  .sub-titulo-lanches{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .texto-lanches{
+        font-size: 13px;
+  }
+
+
+   /* CSS DA PAGINA DE HAMBURGUERES TERMINA AQUI */
+
+   /* ------------------------------------------------------------------- */
+
+   /* CSS DA PAGINA DE SUGESTAO COMEÇA AQUI */
+
+   .Sugestao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.tittleSugestao{
+  color: #d9534f;
+  text-align: center;
+  margin: auto;
+  font-size: 35px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 600px; /* Limita o tamanho máximo da caixa do formulário */
+  padding: 20px;
+  background-color: white; /* Fundo branco */
+  box-shadow: 0 20px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 10px; /* Bordas arredondadas */
+  margin: auto;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+*/
+.mb-3 {
+  margin-bottom: 10px;
+  
+}
+
+#exampleCheck1{
+  border: 1px solid;
+  opacity: 0.5;
+}
+/* Estiliza o campo de texto */
+.form-control1,
+.form-control2 {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Caixa de texto para sugestões com ajuste para quebra de linha */
+textarea.form-control2 {
+  resize: vertical; /* redimensionar a altura da caixa de texto */
+  white-space: pre-wrap; /* quebra de linha dentro do textarea */
+}
+
+/* Estilo do botão */
+.btn-primary {
+  background-color: #f04d48;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+.btn-primary:hover {
+  background-color: #ff0c03;
+}
+
+   /* CSS DA PAGINA DE SUGESTAO TERMINA AQUI */
+
+   /* ------------------------------------------------------------------- */
+
+  /* MEDIA DA PAGINA HOME COMEÇA AQUI */
+
+  @media (max-width: 1024px) {
+    .titulo {
+      font-size: 2rem;
+    }
+
+    .sub-titulo{
+        font-size: 1.5rem;
+    }
+  
+    .caixa-texto {
+      width: 70vw;
+      font-size: 18px;
+    }
+  
+    .conteudo-carrousel {
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .carousel-inner {
+      width: 100%;
+      height: auto;
+    }
+  
+    .lanches, .bebidas, .sobremesas {
+      margin-bottom: 20px;
+
+      h3{
+        font-size: 1.5em;
+        text-align: center;
+        font-weight: bold;
+        color: #675f5f;
+      }
+
+      img{
+        height: 20vh;
+      }
+
+      p{
+        display: none;
+      }
+    }
+  
+    .rodape-texto {
+        display: none;
+    }
+  
+    .col-lg-6 {
+      width: 100vw;
+      height: auto;
+    }
+  }
+  
+ 
+  @media (max-width: 700px) {
+    .titulo {
+      font-size: 1.5rem;
+    }
+  
+    .sub-titulo {
+      font-size: 1.2rem;
+    }
+  
+    .caixa-texto {
+      display: none;
+    }
+  
+    .conteudo-carrousel {
+        flex-direction: column;
+    
+    }
+  
+    .carousel-inner {
+      width: 100%;
+      height: auto;
+    }
+  
+    .lanches, .bebidas, .sobremesas {
+        width: 65%;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .conteudo-imagem{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .rodape-texto {
+      display: none;
+    }
+  
+    .col-lg-6 {
+      width: 100vw;
+      height: auto;
+    }
+  }
+  /* MEDIA PAGINA HOME É ATE AQUI */
+
+   /* ------------------------------------------------------------------- */
+
+  /* MEDIA PAGINA SOBREMESAS COMEÇA AQUI */
+
+  @media (max-width: 1024px){
+    .ingredientes{
+        display: none;
+    }
+
+    .sub-titulo-sobremesas{
+        font-size: 30px;
+    }
+
+    .tableSobremesas{
+        width: 80vw;
+    }
+
+    .menuh2Sobremesas{
+        font-size: 30px;
+    }
+    
+    .texto-sobremesa{
+        font-size: 20px;
+    }
+  }
+
+  @media (max-width: 470px){
+    .sub-titulo-sobremesas{
+        font-size: 25px;
+    }
+
+    .texto-sobremesa{
+        font-size: 20px;
+    }
+    
+
+    .tableSobremesas{
+        height: 80vh;
+        width: 90vw;
+    }
+    
+  }
+    /* MEDIA PAGINA SOBREMESAS TERMINA AQUI */
+
+    /* ------------------------------------------------------------------- */
+
+    /* MEDIA DA PAGINA DE BEBIDAS COMEÇA AQUI  */
+
+    @media (max-width: 1024px){
+        .sub-titulo-bebidas{
+            font-size: 20px;
+        }
+        
+        .menuh2Bebidas{
+            font-size: 30px;
+        }
+
+        .texto-bebidas{
+            font-size: 20px;
+        }
+      }
+    
+    @media (max-width: 510px){
+        .sub-titulo-bebidas{
+            font-size: 20px;
+        }
+
+        .menuBebidas{
+            
+        }
+        
+        .texto-bebidas{
+            font-size: 12px;
+        }
+      }
+
+    /* MEDIA DA PAGINA DE BEBIDAS TERMINA AQUI  */
+
+    /* ------------------------------------------------------------------- */
+
+    /* MEDIA DA PAGINA DE HAMBURGUER COMEÇA AQUI  */
+
+    @media (max-width: 1024px){
+        .sub-ingredientes{
+            display: none;
+        }
+
+        .texto-lanches{
+            font-size: 20px;
+      }
+
+      .menuh2Hamburguer{
+        font-size: 25px;
+    }
+
+    }
+
+    @media (max-width: 470px){
+        .menuh2Hamburguer{
+            font-size: 20px;
+        }
+
+        .sub-titulo-lanches{
+            font-size: 25px;
+        }
+
+        .texto-lanches{
+            font-size: 18;
+        }
+    }
+
+    /* MEDIA DA PAGINA DE HAMBURGUER TERMINA AQUI  */
+    
+  
