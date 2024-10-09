@@ -1,6 +1,7 @@
 
 /* CSS PAGINA HOME COMEÇA AQUI */
 
+HEAD
 /* Estilos gerais para todos os dispositivos */
 * {
     margin: 0;
@@ -23,6 +24,396 @@
     text-align: center;
     margin: 20px auto;
     width: 75%;
+  }
+.fundoBebidas {
+  background-image: url(./img/fundoBebidas.jpg.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100%;
+  background-color: #675f5f;
+}
+.fundoDoce {
+  background-image: url(./img/fundoDoce1.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100%;
+  background-color: #1b1a1a;
+}
+
+/*botoes do carrousel*/
+/* Mudar a cor dos ícones de navegação (setas) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #675f5f; /* Cor de fundo para as setas */
+  border-radius: 50%; /* Deixa as setas arredondadas */
+  width: 50px;
+  height: 50px;
+}
+
+/* Adicionar efeito de hover para melhorar a experiência */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #1b1a1a; /* Mudar a cor ao passar o mouse */
+  transition: background-color 0.3s ease;
+}
+
+/* Opcional: personalizar os indicadores (bolinhas) */
+.carousel-indicators [data-bs-target] {
+  background-color: #1b1a1a; /* Cor padrão das bolinhas */
+}
+
+.carousel-indicators [data-bs-target]:hover,
+.carousel-indicators .active {
+  background-color: #1b1a1a; /* Cor das bolinhas ativas ou ao passar o mouse */
+}
+#carouselExampleIndicators {
+  float: right; /*Move o carousel para a direita*/
+}
+
+.carousel-inner{
+  width: 500px;
+  height:500px;
+}
+/*Imagens do carousel*/
+#c1 {
+  width: 500px; /* Defina a largura desejada */
+  height: 500px; /* Defina a altura desejada */
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+  border-radius: 15px;
+}
+
+.positionCarrousel{
+  display: flex;
+}
+
+/*junta a caixa de texto com o carrousel*/
+.BoxCarrousel{
+  display: flex;
+  flex-direction: row; /*Para ficar em linhas*/
+  align-items: center; /*Alinhar os itens*/
+  margin-top: 1%;
+}
+
+/*Box de texto ao lado do carousel*/
+.text-box {
+  background-color: #f8f9fa;
+  border-radius: 20px;
+  height: 500px; /* ajusta ou remove a altura fixa para evitar cortes */
+  width: 50%; /*largura percentual para responsividade */
+  margin: auto;
+  padding: 15px;
+  box-sizing: border-box; 
+  overflow-y: auto; /* Permite rolar o conteúdo se ele exceder a altura definida */
+}
+
+/*Tamanho do titulo*/
+.text-box h2 {
+  color: #d9534f;
+  font-size: 2em;
+  margin-bottom: 5px;
+  text-align: center;/*Alinhando o titulo ao centro*/
+}
+
+/*tamanho do texto*/
+.text-box p {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+  text-align: justify; /* Texto por extenso */
+  overflow-wrap: break-word; /* Quebra palavras longas para evitar corte */
+}
+
+img {
+  width: 200px; /* Definindo a largura desejada */
+  height: 200px; /* Definindo a altura desejada */
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+  border-radius: 10px; /* Deixa as bordas arredondadas */
+}
+
+h2 {
+  border-radius: 15px;
+  margin: auto;
+  width: 80%;
+  color: rgb(69, 65, 65);
+  font-size: 250%;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+
+.ConteudoTitulo{
+  display: flex;
+  flex-direction: column;
+}
+
+.titleh2 {
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+  margin: 20px auto;
+  width: 80%;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 250%;
+  opacity: 0.7;
+}
+
+.p1 {
+  color: #d9534f;
+  position: relative;
+  top: +15px;
+  text-align: center;
+  font-size: 180%;
+  font-weight: bold;
+}
+
+#demo {
+  position: relative;
+  top: -150px;
+  margin: auto;
+  width: 95%;
+  padding: auto;
+}
+
+.containerAcesso{
+  display:flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 25%;
+}
+
+.menuLanche {
+  text-align: center;
+}
+
+.tableLanches {
+  max-height: 80%;
+  min-height: 60vh;
+  width: 80%; /*ajusta o tamanho da tabela*/
+  margin: auto;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 25px;
+}
+
+.line{
+  border: none; /* Remove a borda padrão */
+  height: 2px; /* Define a altura da linha */
+  background-color: black; /* Define a cor da linha */
+  width: 45%; /* Define a largura da linha */
+  margin: 20px auto; /* Centraliza a linha */
+  border-radius: 15px;
+}
+
+td,
+tr {
+  color: aliceblue;
+  font-size: large;
+  padding-right: 15px;
+}
+.menuh2 {
+  color: aliceblue;
+  background-color: #1b1a1a;
+  opacity: 0.8;
+  padding: 10px;
+}
+
+.menuh2Bebidas {
+  color: aliceblue;
+  background-color: black;
+  width: 45%; /*Tamanho*/
+  font-size: 250%;
+  padding: 10px;
+  border-radius: 15px;
+  opacity: 0.8;
+}
+
+th {
+  color: aliceblue;
+  font-weight: bold;
+  text-transform: uppercase; /* Texto em maiúsculo */
+  padding-right: 15px;
+}
+
+.menuBebidas {
+  text-align: center;
+}
+
+.tableBebidas {
+  max-height: 80%;
+  min-height: 65vh;
+  width: 45%; /*ajusta o tamanho da tabela*/
+  margin: auto;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 25px;
+}
+
+.menuSobremesas {
+  text-align: center;
+}
+
+.tableSobremesas {
+  max-height: 80%;
+  min-height: 60vh;
+  width: 80%; /*ajusta o tamanho da tabela*/
+  margin: auto;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 25px;
+}
+.card-title {
+  color: black;
+}
+
+a {
+  text-decoration: none; /*remove o sublinhado*/
+}
+
+/*Box de texto e Video*/
+.conjuntoTextoVideo {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px; /* Espaçamento entre a caixa de texto e o vídeo */
+  padding: 20px; /* Espaçamento interno para toda a seção */
+  box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+
+.boxTextoVideo {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px; /* Para garantir que o texto não fique colado nas bordas */
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: auto; /* Permite rolar o conteúdo se ele exceder a altura definida */
+}
+
+.titleBoxVideo {
+  color: #f04d48;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.TextoBoxVideo {
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  overflow-wrap: break-word; /* Quebra as palavras longas que não cabem na linha */
+}
+
+.videoBurguer iframe {
+  width: 800px; 
+  height: 355px; /* Altura do vídeo */
+  border-radius: 8px; /* Bordas arredondadas (opcional) */
+}
+
+@media (max-width: 768px) {
+  .conjuntoTextoVideo {
+    flex-direction: column; /* Em telas menores, os elementos ficarão empilhados */
+    gap: 10px;
+  }
+
+  .boxTextoVideo, .videoBurguer {
+    width: 100%; /* Ocupam 100% da largura em telas pequenas */
+  }
+}
+
+
+
+
+/* Estilos gerais para dispositivos menores */
+@media (max-width: 768px) {
+  .navbar {
+    text-align: center;
+  }
+  .navbar-brand {
+    margin-left: 0;
+  }
+  
+  h2.titleh2 {
+    font-size: 1.8em;
+  }
+  
+  .p1 {
+    font-size: 1.4em;
+  }
+  /* Tornando o carousel mais responsivo */
+  .container {
+    width: 100%;
+    height: auto;
+    left: 0;
+    padding: 10px;
+  }
+  #c1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-box {
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .text-box h2 {
+    left: 0;
+    text-align: center;
+  }
+
+  /* Cards com lanches, bebidas e sobremesas */
+  #demo {
+    top: 0;
+    margin-top: 20px;
+  }
+  
+  .col img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /*Video e informações na parte inferior*/
+  
+  .videoBurguer {
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+  }
+  
+  /*Ajuste geral de margens e espaçamentos*/
+  .tittleBoxVideo {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+/*Para smartphones*/
+@media (max-width: 576px) {
+  h2.titleh2 {
+    font-size: 1.5em;
+  }
+
+  .p1 {
+    font-size: 1.2em;
+  }
+
+  /* Box de texto ao lado do carousel em uma coluna */
+  .text-box {
+    width: 100%;
     padding: 15px;
     border-radius: 15px;
     font-size: 2rem;
@@ -80,6 +471,8 @@
     padding: 15px;
     max-width: 400px;
 
+
+  }
     h3{
         font-size: 1.5rem;
         margin-top: 8px;
@@ -95,6 +488,9 @@
   
   .imagem1, .imagem2, .imagem3 {
     height: 15em;
+  }
+
+  .videoBurguer {
     width: 100%;
   }
   
@@ -589,7 +985,7 @@ textarea.form-control2 {
         .sub-titulo-bebidas{
             font-size: 20px;
         }
-
+        
         .menuBebidas{
             
         }
